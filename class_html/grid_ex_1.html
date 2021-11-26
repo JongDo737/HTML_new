@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .parents {
+            display: grid;
+            grid-template-columns: 300px 1fr 300px;
+            grid-template-rows: 100px 1fr 100px;
+            gap: 10px;
+            height: 100vh;
+
+        }
+
+        .parents div {
+            background-color: deepskyblue;
+            display: grid;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 10px;
+            justify-items: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .parents div.heading {
+            grid-column: 1/4;
+        }
+
+        .parents div.manu {
+            grid-row: 2/4;
+        }
+
+        .parents div.main {
+            grid-column: 2/3;
+        }
+
+        .parents div.aside {
+            grid-col: 3/4;
+        }
+
+        .parents div.footer {
+            grid-column: 2/4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parents">
+        <div class="heading">Header</div>
+        <div class="manu">manu</div>
+        <div class="main">main</div>
+        <div class="aside">aside</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+
+</html>

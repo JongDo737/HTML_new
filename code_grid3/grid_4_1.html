@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parents {
+            display: grid;
+            grid-template-columns: repeat(6, auto);
+            background-color: wheat;
+            height: 300px;
+            border: 5px solid black;
+            gap: 10px;
+
+        }
+
+        .parents div {
+            font-size: 30px;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .parents div.item {
+            grid-area: 2 / 1/ span 2/ span 3;
+            background-color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parents">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div class="item">8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+    </div>
+</body>
+
+</html>
